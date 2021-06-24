@@ -1,0 +1,52 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 0.625rem;
+  
+
+  @include breakpoint-down(medium){ 
+    display: block;
+    padding: 0; 
+  }
+
+
+  &__section {
+    width: 65%;
+    margin-top: 0.625rem;
+    padding: 1rem;
+    padding-top: 35px;
+    background: $white;
+    border: 2px solid $dark-gray;
+
+    @include breakpoint-down(medium) {
+      width: inherit;
+    
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-bottom: 1.6rem;
+      font-size: 1.55rem;
+      text-decoration: underline;
+    }
+
+    code {
+      display: inline-block;
+      margin: 30px;
+      padding: 20px;
+      background: $gray;
+    }
+    ul {
+      margin-top: 20px;
+      margin-left: 4.375rem;
+    }
+
+    li {
+      list-style: square;
+    }
+  }
+}

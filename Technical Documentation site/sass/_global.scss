@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: $font-1;
+    font-size: $font-medium;
+    line-height: 2rem;
+    background-color: $gray;
+
+
+    // No scroll
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+h1,
+h2 {
+    margin-bottom: 2rem;
+    font-family: $font-2;
+    line-height: 2rem;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: $font-2;
+    line-height: 2rem;
+    font-size: 1.25rem;
+}
+p{ 
+    padding-left: 20px;
+    padding-right: 30px;
+  }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+// visibility
+.hide-for-mobile {
+    @include breakpoint-down(medium) {
+        display: none;
+        z-index: 0;
+    }
+}
+
+.hide-for-desktop {
+    @include breakpoint-up(large) {
+        display: none !important;
+    }
+}
+
+
+
+// display-flex:center:center
+
+.fl-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

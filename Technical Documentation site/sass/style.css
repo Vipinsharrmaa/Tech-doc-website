@@ -68,6 +68,14 @@ a {
           justify-content: center;
 }
 
+@media (max-width: 63.9375em) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -228,7 +236,8 @@ a {
 @media (max-width: 63.9375em) {
   .main {
     display: block;
-    padding: 0;
+    padding-top: 81px;
+    width: 100%;
   }
 }
 
@@ -243,7 +252,7 @@ a {
 
 @media (max-width: 63.9375em) {
   .main__section {
-    width: inherit;
+    width: 100%;
   }
 }
 
